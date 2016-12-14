@@ -19,9 +19,9 @@
     background-image: linear-gradient(#06422a,#0a6142);
 }
 
-.navbar-inverse.noslider {
+/*.navbar-inverse.noslider {
     margin-bottom:70px;
-}    
+} */   
     
 .navbar-inverse .navbar-nav>li>a {
     color: white;
@@ -50,7 +50,7 @@
     padding-bottom: 15px;
 }
 footer {
-    background-color: #666;
+    background-color: #095F40;
     padding-top: 15px;
     text-align: center;
 }
@@ -60,6 +60,10 @@ footer {
     position: fixed;
     width: 100%;
     bottom: 0px;
+  }
+  
+  body{
+    padding-bottom:25px;
   }
 }
 
@@ -129,15 +133,14 @@ body {
 }
 .main-container {
     min-height: 466px;
-    padding-top: 90px;
+    padding-top: 68px;
 }
 .big-header {
     font-size: 46px;
     font-weight: bold;
 }
 .container ul {
-    padding-left: 20px;
-    
+    /*padding-left: 20px;*/   
 }
 
 .container .nav.navbar-nav{
