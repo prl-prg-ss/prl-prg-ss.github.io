@@ -337,3 +337,11 @@ body {
 .header-padding{
   padding-top: 69px;
 }
+
+.margin-top{
+  margin-top:10px;
+}
+
+.margin-bottom{
+  margin-bottom:10px;
+}
