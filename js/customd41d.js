@@ -50,6 +50,7 @@ $(document).ready(function(){
         $("#background").addClass('background-anim');
     }
 
+    setFooter();
 });
 // FlexSlider plugin
 $('.flexslider').flexslider({
@@ -69,8 +70,6 @@ $(window).load(function() {
 
 });
 
-
-
 $('.flex-caption').addClass('animated bounceInRight');
 
 $('.flex-next').on('click', function() {
@@ -83,6 +82,24 @@ $('.flex-prev').on('click', function() {
     $('.flex-caption').removeClass('animated bounceInLeft');
     $('.flex-caption').fadeIn(0).addClass('animated bounceInLeft');
 });
+
+$( window ).resize(function(){
+  setFooter();
+});
+
+function setFooter()
+{
+    console.log("tu");
+    var bh = $("body").height();
+    var wh = $(window).height();
+    var fh = $("footer").height();
+    if((bh+fh)<wh){
+      $("footer").addClass("fixed");
+    }
+    else{
+      $("footer").removeClass("fixed");    
+    }
+}
 
 var isMobile = {
     Android: function() {
