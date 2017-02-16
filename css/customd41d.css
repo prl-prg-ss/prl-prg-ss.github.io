@@ -33,7 +33,7 @@
 @media (min-width: 1200px) {
    .flex-caption h2 {
       margin-top:70px;
-   }  
+   } 
 } 
 
 .navbar-inverse {
@@ -244,10 +244,10 @@ body {
     }
 }
 @media (max-width: 768px) {
-    .flexslider {
+    /*.flexslider {
         margin-top: 50px;
     }
-    /*.navbar-inverse {
+    .navbar-inverse {
         background-color: rgba(0,0,0,0.6);
     } */
     .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>li>a:hover {
@@ -352,3 +352,34 @@ body {
 .margin-bottom{
   margin-bottom:10px;
 }
+
+.logos{
+  /*position: absolute;
+  top:54px;
+  right: 150px;*/
+  position:relative;
+  /*margin-top:10px;*/
+  padding:10px;
+  text-align: right;
+  background-color:#fff;
+  width:100%;
+}
+
+.logos img{
+  /*max-width:188px;*/
+  max-height:65px;
+  margin:0 10px;
+  display:inline-block;  
+}
+
+@media (max-width: 1200px) {  
+  .logos img{
+    max-width:80px;
+    margin:5px; 
+  }
+  
+  .logos{
+    text-align:center;
+    margin-right:0px;
+  }
+}  
